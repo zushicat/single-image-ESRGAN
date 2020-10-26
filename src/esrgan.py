@@ -159,10 +159,10 @@ class ESRGANModel(tf.Module):  # regarding parameter: https://stackoverflow.com/
             return Lambda(subpixel, output_shape=subpixel_shape)
 
 
-        def upsample(x, idx):
-            x = Conv2D(256, kernel_size=3, strides=1, padding='same', name=f'upSampleConv2d_{idx}')(x)
+        def upsample(x):
+            x = Conv2D(256, kernel_size=3, strides=1, padding='same')(x)
             x = SubpixelConv2D(2)(x)
-            x = PReLU(shared_axes=[1, 2], name=f'upSamplePReLU_{idx}')(x)
+            x = PReLU(shared_axes=[1, 2])(x)
             
             return x
 
@@ -182,8 +182,8 @@ class ESRGANModel(tf.Module):  # regarding parameter: https://stackoverflow.com/
         x = Add()([x, x_start])
 
         # Upsampling depending on factor
-        x = upsample(x, 1)
-        x = upsample(x, 2)  # self.upscaling_factor > 2
+        x = upsample(x)
+        x = upsample(x)  # self.upscaling_factor > 2
         
         x = Conv2D(64, kernel_size=3, strides=1, padding='same')(x)
         x = LeakyReLU(0.2)(x)
