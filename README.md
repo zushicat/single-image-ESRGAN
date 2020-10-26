@@ -21,9 +21,9 @@ for size in [None, original_img.height//2, original_img.height//4]
 
 ### ESRGAN
 In fact, there are not too many things that changed.    
-Check out this video for a great overview about the differences: https://www.youtube.com/watch?v=KULkSwLk62I
-Also, have a look at this blogpost with implementation examples:    
-https://medium.com/analytics-vidhya/esrgan-enhanced-super-resolution-generative-adversarial-network-using-keras-a34134b72b77
+Check out this YT video for a great overview about the differences between SRGAN and ESRGAN: ["How Super Resolution Works" by 
+Leo Isikdogan](https://www.youtube.com/watch?v=KULkSwLk62I)
+Also, have a look at this blogpost with implementation examples: ["ESRGAN: Enhanced Super-Resolution Generative Adversarial Network using Keras" by Chhaya Vankhede](https://medium.com/analytics-vidhya/esrgan-enhanced-super-resolution-generative-adversarial-network-using-keras-a34134b72b77)
 
 **class ESRGAN**
 The network architecture of the generator has changed. 
