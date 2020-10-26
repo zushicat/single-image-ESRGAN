@@ -8,7 +8,7 @@ Also, I try to avoid unnecessary redundancy and rather like to point out how the
 
 ## Differences between the SRGAN and ESRGAN implementations
 ### Data Loader
-- Pass the percentage of the training set you like to compute with *percent_of_training_set* when initializing the DataLoader class (in \__init__ of Pretrainer and Trainer)
+- Pass the percentage of the training set you like to compute with *percent_of_training_set* when initializing the DataLoader class (in \___init\___ of Pretrainer and Trainer)
 - in function *load_images*: I additionally use "pre-crops" of resized versions of the images (i.e. 1600x1600 pixel -> 800x800 pixel and 400x400 pixel) which seems to improve the quality of generated images with overall lower quality (see below: Results)    
 I admittedly didn't really *measure* the results, so it's up to you: If you consider this as utter useless, change the loop
 ```
