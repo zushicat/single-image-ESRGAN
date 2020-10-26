@@ -3,7 +3,7 @@ Enhance low-res images with enhanced super-resolution ESRGAN (Keras / Tensorflow
 
 The overall structure is based on this SRGAN implementation: https://github.com/zushicat/single-image-SRGAN    
 
-Please check out the according README for details on usage and the mechanics, since those basically apply here as well.     
+Please check out the according README for details on usage and the mechanics, since those basically apply here as well. 
 Also, I try to avoid unnecessary redundancy and rather like to point out how the implementations differ from each other.    
 
 
