@@ -1,0 +1,27 @@
+# Python 3
+__pycache__/
+
+# macOS
+.DS_Store
+
+# Visual Studio Code
+.vscode/
+
+Pipfile.lock
+
+model/*.txt
+model/image_generator_model_0.h5
+
+model/checkpoints/fine_tune/*
+model/checkpoints/fine_tune_fix_size/*
+model/checkpoints/pre_train/*
+model/checkpoints/pre_train_fix_size/*
+model/weights/*
+
+test_predictions/fine_tune/*/
+test_predictions/pre_train/*/
+test_predictions/model_predictions/*
+
+readme_images/
+
+!**/README.md

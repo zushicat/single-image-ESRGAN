@@ -1,0 +1,1 @@
+Checkpoints for pre-training generator.
