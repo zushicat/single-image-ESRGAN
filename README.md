@@ -20,22 +20,23 @@ for size in [None, original_img.height//2, original_img.height//4]
 
 
 
-### ESRGAN
-In fact, there are not too many things that changed.    
+### ESRGAN  
 Check out this YT video for a great overview about the differences between SRGAN and ESRGAN:     
 ["How Super Resolution Works" by Leo Isikdogan](https://www.youtube.com/watch?v=KULkSwLk62I)    
 
 Also, have a look at this blogpost with implementation examples:     
 ["ESRGAN: Enhanced Super-Resolution Generative Adversarial Network using Keras" by Chhaya Vankhede](https://medium.com/analytics-vidhya/esrgan-enhanced-super-resolution-generative-adversarial-network-using-keras-a34134b72b77)    
 
-**class ESRGAN**
+In fact, there are not too many things that changed.    
+
+**class ESRGAN**    
 The network architecture of the generator has changed. 
-- no batch normalization (which also can cause dreaded artifacts)
+- no batch normalization (which can also cause dreaded artifacts)
 - additionally in function *upsample*
     - use SubpixelConv2D function (instead of UpSampling2D)
-- more layers and connections (see: functions *RRDB* and *dense_block*)
+- more layers and connections (see: functions *RRDB* and *dense_block*)    
 
-**class Trainer**
+**class Trainer**    
 The loss functions (called in function *train_step*) have changed (using a relativistic discriminator, trying to predict the probability if a real image is relatively more realistic than a fake image).
 
 ### Inference
