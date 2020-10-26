@@ -1,7 +1,8 @@
 # single-image-ESRGAN
 Enhance low-res images with enhanced super-resolution ESRGAN (Keras / Tensorflow implementation).
 
-The overall structure is based on this SRGAN implementation: https://github.com/zushicat/single-image-SRGAN.    
+The overall structure is based on this SRGAN implementation: https://github.com/zushicat/single-image-SRGAN    
+
 Please check out the according README for details on usage and the mechanics, since those basically apply here as well.     
 Also, I try to avoid unnecessary redundancy and rather like to point out how the implementations differ from each other.    
 
@@ -23,6 +24,7 @@ for size in [None, original_img.height//2, original_img.height//4]
 In fact, there are not too many things that changed.    
 Check out this YT video for a great overview about the differences between SRGAN and ESRGAN:     
 ["How Super Resolution Works" by Leo Isikdogan](https://www.youtube.com/watch?v=KULkSwLk62I)    
+
 Also, have a look at this blogpost with implementation examples:     
 ["ESRGAN: Enhanced Super-Resolution Generative Adversarial Network using Keras" by Chhaya Vankhede](https://medium.com/analytics-vidhya/esrgan-enhanced-super-resolution-generative-adversarial-network-using-keras-a34134b72b77)    
 
