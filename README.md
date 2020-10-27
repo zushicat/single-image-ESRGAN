@@ -70,7 +70,12 @@ Resolution of input image  | Input images | Output images 1 |  Output images 2
 100x100 pixel |<img src="readme_images/high_quality_inputs/cropped/input_100.png" width="300" />|![](readme_images/high_quality_inputs/cropped/output_100_fix_size.png)|![](readme_images/high_quality_inputs/cropped/output_100_var_size.png)
 
 
-**2 - Aerial images from 2013 with lower image quality.**
+**2 - Aerial images from 2013 with lower image/camera quality.**
+
+Looking at an original input image (400x400 pixel) and the generated image (1600x1600 pixel resized to 600x600 pixel), the generated image in fact looks crispier.
+<img src="readme_images/low_quality_inputs/input_400.png" width="49%" /> <img src="readme_images/low_quality_inputs/output_400_var_size.png" width="49%" />
+
+Examples with 1/4 of the images:    
 
 Resolution of input image  | Input images | Output images 1 |  Output images 2 
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -79,3 +84,4 @@ Resolution of input image  | Input images | Output images 1 |  Output images 2
 200x200 pixel |<img src="readme_images/low_quality_inputs/cropped/input_200.png" width="300" />|![](readme_images/low_quality_inputs/cropped/output_200_fix_size.png)|![](readme_images/low_quality_inputs/cropped/output_200_var_size.png)
 150x150 pixel |<img src="readme_images/low_quality_inputs/cropped/input_150.png" width="300" />|![](readme_images/low_quality_inputs/cropped/output_150_fix_size.png)|![](readme_images/low_quality_inputs/cropped/output_150_var_size.png)
 100x100 pixel |<img src="readme_images/low_quality_inputs/cropped/input_100.png" width="300" />|![](readme_images/low_quality_inputs/cropped/output_100_fix_size.png)|![](readme_images/low_quality_inputs/cropped/output_100_var_size.png)
+
