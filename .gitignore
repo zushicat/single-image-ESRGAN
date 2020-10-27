@@ -23,6 +23,4 @@ test_predictions/fine_tune/*/
 test_predictions/pre_train/*/
 test_predictions/model_predictions/*
 
-readme_images/
-
 !**/README.md
