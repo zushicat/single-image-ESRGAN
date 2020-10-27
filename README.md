@@ -1,7 +1,7 @@
 # single-image-ESRGAN
 Enhance low-res images with enhanced super-resolution ESRGAN (Keras / Tensorflow implementation).
 
-<img src="readme_images/high_quality_inputs/input_200.png" width="49%" /> <img src="readme_images/high_quality_inputs/output_200_var_size.png" width="49%" />
+<img src="readme_images/high_quality_inputs/input_150.png" width="49%" /> <img src="readme_images/high_quality_inputs/output_150_var_size.png" width="49%" />
 
 The overall structure is based on this SRGAN implementation: https://github.com/zushicat/single-image-SRGAN    
 
