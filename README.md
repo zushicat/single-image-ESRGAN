@@ -13,7 +13,7 @@ Also, I try to avoid unnecessary redundancy and rather like to point out how the
 The default is 0.5 (50%)
 - in function *load_images*:    
 I additionally use "pre-crops" of resized versions of the images (i.e. 1600x1600 pixel -> 800x800 pixel and 400x400 pixel, applied to 96x96 pixel -> 24x24 pixel crops) which seems to improve the quality of generated images with input of images with overall lower quality (see below: Results)    
-I admittedly didn't really *measure* the results, so it's up to you: If you consider this as utter useless, change following loop accordingly:
+I admittedly didn't really *measure* the results, so it's up to you: If you consider this as utter useless, change following loop accordingly (i.e. remove):
 ```
 for size in [None, original_img.height//2, original_img.height//4]
 ````
