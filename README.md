@@ -50,9 +50,14 @@ Both models were trained with
   - Pretrain: 400000 steps
   - Finetune: 1000000 steps
 
-Both examples: These are 1/4 image crops of both input (resolution as stated) and output (input 4x upscale and resolution resized to 600x600 pixel)
+You can find the trained models of aerial images in:
+- /model/image_generator_model.h5 (crops of variable input size of crops)
+- /model/image_generator_model_fix_size.h5 (crops of 1600x1600 pixel image input size, only)
 
-1 - Aerial images from 2019 taken with high resolution cameras.
+Both examples:    
+These are 1/4 image crops of both input (resolution as stated) and output (input 4x upscale and resolution resized to 600x600 pixel)
+
+**1 - Aerial images from 2019 taken with high resolution cameras.**
 
 Resolution of input image  | Input images | Output images 1 |  Output images 2 
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -63,7 +68,7 @@ Resolution of input image  | Input images | Output images 1 |  Output images 2
 100x100 pixel |<img src="readme_images/high_quality_inputs/cropped/input_100.png" width="300" />|![](readme_images/high_quality_inputs/cropped/output_100_fix_size.png)|![](readme_images/high_quality_inputs/cropped/output_100_var_size.png)
 
 
-2 - Aerial images from 2013 with lower quality.
+**2 - Aerial images from 2013 with lower image quality.**
 
 Resolution of input image  | Input images | Output images 1 |  Output images 2 
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
