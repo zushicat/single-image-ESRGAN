@@ -20,7 +20,7 @@ for size in [None, original_img.height//2, original_img.height//4]
 
 
 
-### ESRGAN  
+### ESRGAN
 Check out this YT video for a great overview about the differences between SRGAN and ESRGAN:     
 ["How Super Resolution Works" by Leo Isikdogan](https://www.youtube.com/watch?v=KULkSwLk62I)    
 
@@ -46,3 +46,12 @@ No differences.
 ## Results
 xxx
 
+Resolution of input image  | Input images | Output images 1 |  Output images 2 
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+400x400 pixel |<img src="readme_images/cropped/input_400.png" width="300" />|![](readme_images/cropped/output_400_fixed_size.png)|![](readme_images/cropped/output_400_var_size.png)
+300x300 pixel |<img src="readme_images/cropped/input_300.png" width="300" />|![](readme_images/cropped/output_300_fixed_size.png)|![](readme_images/cropped/output_300_var_size.png)
+200x200 pixel |<img src="readme_images/cropped/input_200.png" width="300" />|![](readme_images/cropped/output_200_fixed_size.png)|![](readme_images/cropped/output_200_var_size.png)
+150x150 pixel |<img src="readme_images/cropped/input_150.png" width="300" />|![](readme_images/cropped/output_150_fixed_size.png)|![](readme_images/cropped/output_150_var_size.png)
+100x100 pixel |<img src="readme_images/cropped/input_100.png" width="300" />|![](readme_images/cropped/output_100_fixed_size.png)|![](readme_images/cropped/output_100_var_size.png)
+
+xxx
