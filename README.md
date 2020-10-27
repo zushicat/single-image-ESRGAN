@@ -7,7 +7,7 @@ Please check out the according README for details on usage and the mechanics, si
 Also, I try to avoid unnecessary redundancy and rather like to point out how the implementations differ from each other.    
 
 
-## Differences between the SRGAN and ESRGAN implementations
+## Differences between the implementations of mentioned SRGAN and this ESRGAN
 ### data_loader.py
 - Pass the percentage of the training set you like to compute with *percent_of_training_set* when initializing the DataLoader class (in \__init\__ of Pretrainer and Trainer)    
 The default is 0.5 (50%)
