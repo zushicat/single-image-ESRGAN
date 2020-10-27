@@ -55,3 +55,11 @@ Resolution of input image  | Input images | Output images 1 |  Output images 2
 100x100 pixel |<img src="readme_images/high_quality_inputs/cropped/input_100.png" width="300" />|![](readme_images/high_quality_inputs/cropped/output_100_fix_size.png)|![](readme_images/high_quality_inputs/cropped/output_100_var_size.png)
 
 xxx
+
+Resolution of input image  | Input images | Output images 1 |  Output images 2 
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+400x400 pixel |<img src="readme_images/low_quality_inputs/cropped/input_400.png" width="300" />|![](readme_images/low_quality_inputs/cropped/output_400_fix_size.png)|![](readme_images/low_quality_inputs/cropped/output_400_var_size.png)
+300x300 pixel |<img src="readme_images/low_quality_inputs/cropped/input_300.png" width="300" />|![](readme_images/low_quality_inputs/cropped/output_300_fix_size.png)|![](readme_images/low_quality_inputs/cropped/output_300_var_size.png)
+200x200 pixel |<img src="readme_images/low_quality_inputs/cropped/input_200.png" width="300" />|![](readme_images/low_quality_inputs/cropped/output_200_fix_size.png)|![](readme_images/low_quality_inputs/cropped/output_200_var_size.png)
+150x150 pixel |<img src="readme_images/low_quality_inputs/cropped/input_150.png" width="300" />|![](readme_images/low_quality_inputs/cropped/output_150_fix_size.png)|![](readme_images/low_quality_inputs/cropped/output_150_var_size.png)
+100x100 pixel |<img src="readme_images/low_quality_inputs/cropped/input_100.png" width="300" />|![](readme_images/low_quality_inputs/cropped/output_100_fix_size.png)|![](readme_images/low_quality_inputs/cropped/output_100_var_size.png)
