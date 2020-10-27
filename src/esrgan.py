@@ -86,9 +86,6 @@ class ESRGANModel(tf.Module):  # regarding parameter: https://stackoverflow.com/
 
         self.upscaling_factor = upscaling_factor
 
-        # Scaling of losses
-        self.loss_weights = {'percept': 1e-3, 'gen': 5e-3, 'pixel': 1e-2}
-
         self.generator = self.build_generator()
         self.discriminator = self.build_discriminator()
         self.vgg = self.build_vgg()
