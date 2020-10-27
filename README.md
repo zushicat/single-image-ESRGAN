@@ -44,7 +44,16 @@ No differences.
 
 
 ## Results
-xxx
+- Output images 1: model trained on 96x96 pixel crops taken from original high res 1600x1600 pixel images (fixed size)
+- Output images 2: model trained on 96x96 pixel crops taken from images original high res images and additionally resized versions (800x800 pixel, 400x400 pixel)
+
+Both models were trained with
+  - Pretrain: 400000 steps
+  - Finetune: 1000000 steps
+
+Both examples: These are 1/4 image crops (300x300 pixel) of both input (resolution as stated) and output (input 4x upscale and resolution resized to 600x600 pixel)
+
+1 - Aerial images from 2019 taken with high resolution cameras.
 
 Resolution of input image  | Input images | Output images 1 |  Output images 2 
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -54,7 +63,8 @@ Resolution of input image  | Input images | Output images 1 |  Output images 2
 150x150 pixel |<img src="readme_images/high_quality_inputs/cropped/input_150.png" width="300" />|![](readme_images/high_quality_inputs/cropped/output_150_fix_size.png)|![](readme_images/high_quality_inputs/cropped/output_150_var_size.png)
 100x100 pixel |<img src="readme_images/high_quality_inputs/cropped/input_100.png" width="300" />|![](readme_images/high_quality_inputs/cropped/output_100_fix_size.png)|![](readme_images/high_quality_inputs/cropped/output_100_var_size.png)
 
-xxx
+
+2 - Aerial images from 2013 with lower quality.
 
 Resolution of input image  | Input images | Output images 1 |  Output images 2 
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
