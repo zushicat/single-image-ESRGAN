@@ -8,7 +8,7 @@ Also, I try to avoid unnecessary redundancy and rather like to point out how the
 
 
 ## Differences between the SRGAN and ESRGAN implementations
-### Data Loader
+### data_loader.py
 - Pass the percentage of the training set you like to compute with *percent_of_training_set* when initializing the DataLoader class (in \__init\__ of Pretrainer and Trainer)    
 The default is 0.5 (50%)
 - in function *load_images*:    
@@ -18,9 +18,7 @@ I admittedly didn't really *measure* the results, so it's up to you: If you cons
 for size in [None, original_img.height//2, original_img.height//4]
 ````
 
-
-
-### ESRGAN
+### esrgan.py
 Check out this YT video for a great overview about the differences between SRGAN and ESRGAN:     
 ["How Super Resolution Works" by Leo Isikdogan](https://www.youtube.com/watch?v=KULkSwLk62I)    
 
@@ -30,16 +28,17 @@ Also, have a look at this blogpost with implementation examples:
 In fact, there are not too many things that changed.    
 
 **class ESRGAN**    
-The network architecture of the generator has changed. 
+Modified network architecture of the generator: 
 - no batch normalization (which can also cause dreaded artifacts)
 - additionally in function *upsample*
     - use SubpixelConv2D function (instead of UpSampling2D)
 - more layers and connections (see: functions *RRDB* and *dense_block*)    
 
 **class Trainer**    
-The loss functions (called in function *train_step*) have changed (using a relativistic discriminator, trying to predict the probability if a real image is relatively more realistic than a fake image).
+Changed loss functions (called in function *train_step*)
+- using a relativistic discriminator, trying to predict the probability if a real image is relatively more realistic than a fake image
 
-### Inference
+### inference.py
 No differences.
 
 
@@ -51,7 +50,7 @@ Both models were trained with
   - Pretrain: 400000 steps
   - Finetune: 1000000 steps
 
-Both examples: These are 1/4 image crops (300x300 pixel) of both input (resolution as stated) and output (input 4x upscale and resolution resized to 600x600 pixel)
+Both examples: These are 1/4 image crops of both input (resolution as stated) and output (input 4x upscale and resolution resized to 600x600 pixel)
 
 1 - Aerial images from 2019 taken with high resolution cameras.
 
